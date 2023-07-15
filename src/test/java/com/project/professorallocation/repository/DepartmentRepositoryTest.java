@@ -56,13 +56,13 @@ public class DepartmentRepositoryTest {
 	}
 
 	@Test
-	void deletById() { //deletar uma id
+	void deletById() { // deletar uma id
 		Long id = 4l;
 		departmentRepository.deleteById(id);
 	}
 
 	@Test
-	void deletAll() { //deletar tudo
+	void deletAll() { // deletar tudo
 		departmentRepository.deleteAllInBatch();
 
 	}

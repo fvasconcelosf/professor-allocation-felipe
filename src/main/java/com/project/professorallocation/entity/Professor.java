@@ -18,14 +18,14 @@ public class Professor {
 	private String name;
 	@JoinColumn(nullable = false)
 	@ManyToOne(optional = false)
-	private Department departamento;
+	private Department department;
 	
 	public Department getDepartamento() {
-		return departamento;
+		return department;
 	}
 
 	public void setDepartamento(Department departamento) {
-		this.departamento = departamento;
+		this.department = departamento;
 	}
 
 	public Long getId() {
@@ -34,7 +34,7 @@ public class Professor {
 
 	@Override
 	public String toString() {
-		return "Professor [id=" + id + ", cpf=" + cpf + ", name=" + name + ", departamento=" + departamento + "]";
+		return "Professor [id=" + id + ", cpf=" + cpf + ", name=" + name + ", departamento=" + department + "]";
 	}
 
 	public void setId(Long id) {
