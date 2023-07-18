@@ -28,7 +28,7 @@ public class ProfessorRepositoryTest {
 		Department dpt = new Department();
 		dpt.setId(1L);
 
-		List<Professor> profs = professorRepository.findByDepartment(dpt);
+		List<Professor> profs = professorRepository.findByDepartmentId(dpt);
 		System.out.println(profs);
 	}
 }

@@ -31,8 +31,8 @@ public class DepartmentRepositoryTest {
 	@Test
 	void findById() { // achar pelo ID
 		Long id = 4l;
-		Optional<Department> mamute = departmentRepository.findById(id);
-		Department dpt = mamute.orElse(null);
+		Optional<Department> testeFindByIdDepartment = departmentRepository.findById(id);
+		Department dpt = testeFindByIdDepartment.orElse(null);
 		System.out.println(dpt);
 	}
 
